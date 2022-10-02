@@ -1,19 +1,14 @@
-import React, { FC } from "react";
 import {
-  Card,
-  CardMedia,
-  Divider,
-  Grid,
+  Card, Grid,
   lighten,
   Theme,
   Typography,
-  useMediaQuery,
+  useMediaQuery
 } from "@mui/material";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons";
 import { makeStyles } from "@mui/styles";
-import SocialButtonGroup from "./SocialButtonGroup";
+import React, { FC } from "react";
 import Headshot from "./Headshot";
+import SocialButtonGroup from "./SocialButtonGroup";
 
 const useStyles = makeStyles((theme: Theme) => ({
   cardRoot: {
@@ -158,7 +153,7 @@ const ProfileCard: FC = () => {
               sx={{ paddingTop: (theme) => theme.spacing(1) }}
             >
               <b>Technologies I'm currently working with:</b>
-              <br /> Golang, Python, Java, Express, both
+              <br /> Golang, Python, Java, both
               relational and non-relational databases.
             </Typography>
           </Grid>
