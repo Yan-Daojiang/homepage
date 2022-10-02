@@ -1,0 +1,6 @@
+node_modules/
+.idea/
+.cache/
+public
+.DS_Store
+.vscode/settings.json
