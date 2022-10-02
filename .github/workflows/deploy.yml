@@ -8,12 +8,18 @@ jobs:
   build:
     name: Build Gatsby Site
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@master
-      - name: Build Gatsby Site
-        uses: jzweifel/gatsby-cli-github-action@master
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
         with:
-          gatsby-arg: build
+          node-version: 14
+      - name: Build
+        run: |
+          npm ci
+          npm run build
       - name: Deploy
         uses: easingthemes/ssh-deploy@v2.0.7
         env:
