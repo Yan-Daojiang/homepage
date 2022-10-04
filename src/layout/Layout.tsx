@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import { Link } from "gatsby";
 import React, { FC } from "react";
 
 import { Background, HamburgerMenu } from "../components";
@@ -22,7 +23,7 @@ const Layout: FC<LayoutProps> = ({ children }) => (
           height: 50,
         }}
       >
-        &copy; {new Date().getFullYear()} - Made with ❤️ by {"Daojiang Yan"}
+        &copy; {new Date().getFullYear()} - 鄂ICP备2022003854号-1
       </Typography>
     </Background>
   </>
